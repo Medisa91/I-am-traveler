@@ -1,11 +1,11 @@
-@mixin tab-text-styles($color) {
+@mixin tab-text-styles($color, $font) {
   text-align: left;
-  font-size: $tab-font-size;
+  font-size: $font;
   color: $color;
   border-radius: 0;
 }
 
-@mixin tab-box-styles($left, $width, $backgroundColor, $property: null, $value: null) {
+@mixin tab-box-styles($left, $width, $height, $backgroundColor, $property: null, $value: null) {
 
   @if $property  !=null {
     #{$property}: $value
@@ -14,8 +14,8 @@
   background-color: $backgroundColor;
   left: $left;
   width: $width;
+  height:  $height;
   top: 571px;
-  height: 58px;
   border-radius: 5px 5px 0px 0px;
   opacity: 1;
 }

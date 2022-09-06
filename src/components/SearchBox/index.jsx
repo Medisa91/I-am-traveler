@@ -89,6 +89,47 @@ const SearchBox = () => {
           </div>
         </div>
       </div>
+      <div class="search-container-responsive">
+        <p className="search-departure-info">Departure Info</p>
+        <p className="search-departure-title fw-bold">
+          <img src={LocationIcon} className="tab-icons" alt="location-img" />
+          Yogyakarta
+          <span className="search-departure">N790AN, Indonesia</span>
+        </p>
+        <p className="search-departure-title fw-bold">
+          <img src={CalendarIcon} className="tab-icons" alt="location-img" />
+          17 July 2021
+          <span className="search-departure">20:15 (+8GMT)</span>
+        </p>
+        <div className="search-plane-wrapper">
+          . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          .{" "}
+          <img
+            src={PlaneIcon}
+            className="search-plane-icon"
+            alt="location-img"
+          />
+        </div>
+        <p className="search-departure-info">Arrival Info</p>
+        <p className="search-departure-title fw-bold">
+          <img src={LocationIcon} className="tab-icons" alt="location-img" />
+          Tokyo
+          <span className="search-departure">N790AN, Japan</span>
+        </p>
+        <p className="search-departure-title fw-bold">
+          <img src={CalendarIcon} className="tab-icons" alt="location-img" />
+          25 July 2021
+          <span className="search-departure">20:15 (+8GMT)</span>
+        </p>
+        <div className="mt-4">
+          <button type="button" class="btn btn-lg change-flight-btn">
+            Change Flight
+          </button>
+          <button type="button" class="btn btn-lg responsive-search-btn">
+            Search
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

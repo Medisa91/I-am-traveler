@@ -16,11 +16,11 @@ const AvailableCard = () => {
     <div className="card mb-3 request-card-wrapper">
       <div className="card-header bg-transparent">
         <div className="row">
-          <div className="col-lg-3 text-left header-card-depart-arriv">
+          <div className="col-3 text-left header-card-depart-arriv">
             <p className="text-left">CGK</p>
             <p className="text-left">15:15</p>
           </div>
-          <div className="col-lg-6 text-center header-card-plane">
+          <div className="col-6 text-center header-card-plane">
             <p className="fw-bold">Cloths</p>
             <p className="mb-0">
               - - - -{" "}
@@ -32,7 +32,7 @@ const AvailableCard = () => {
               - - - -
             </p>
           </div>
-          <div className="col-lg-3 text-right header-card-depart-arriv">
+          <div className="col-3 text-right header-card-depart-arriv">
             <p>DPS</p>
             <p>17:15</p>
           </div>

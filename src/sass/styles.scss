@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
+html,
 body {
     overflow-x: hidden !important;
 }
@@ -15,20 +16,20 @@ body {
 }
 
 .tab-search-box:first-child {
-    @include tab-box-styles(362px, 185px, #FFFFFF, border-top, 4px solid #FFA200);
+    @include tab-box-styles(362px, 185px, 58px, #FFFFFF, border-top, 4px solid #FFA200);
     margin-right: 7px
 }
 
 .tab-search-box:last-child {
-    @include tab-box-styles(555px, 302px, #E8E8E8);
+    @include tab-box-styles(555px, 302px, 58px, #E8E8E8);
 }
 
 .tab-search-box:first-child .nav-link {
-    @include tab-text-styles(#00043D)
+    @include tab-text-styles(#00043D, $tab-font-size)
 }
 
 .tab-search-box:last-child .nav-link {
-    @include tab-text-styles(#6E6E6E);
+    @include tab-text-styles(#6E6E6E, $tab-font-size);
 }
 
 .tab-icons {
@@ -162,13 +163,6 @@ body {
     color: #FFFFFF;
 }
 
-// @media (max-width: 576px) {
-//     .request-card-wrapper {
-//         display: none;
-//     }
-// }
-
-
 .request-card-wrapper {
     height: 228px;
     background: #FBFBFB 0% 0% no-repeat padding-box;
@@ -263,6 +257,7 @@ body {
     margin-right: 5px;
     padding: 8px 10px;
     line-height: 13px;
+    float: left;
 }
 
 .make-offer-btn {
@@ -275,6 +270,7 @@ body {
     color: #FFFFFF;
     padding: 8px 10px;
     line-height: 13px;
+    float: right;
 }
 
 .pr-0 {
@@ -401,6 +397,12 @@ body {
     }
 }
 
-.padding-cards{
+.padding-cards {
     padding: 0 5px;
+}
+
+.search-container-responsive,
+.add-travel-btn-responsive,
+.filter-responsive-btn {
+    display: none;
 }
