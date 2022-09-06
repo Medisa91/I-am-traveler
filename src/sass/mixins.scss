@@ -1,0 +1,32 @@
+@mixin tab-text-styles($color) {
+  text-align: left;
+  font-size: $tab-font-size;
+  color: $color;
+  border-radius: 0;
+}
+
+@mixin tab-box-styles($left, $width, $backgroundColor, $property: null, $value: null) {
+
+  @if $property  !=null {
+    #{$property}: $value
+  }
+
+  background-color: $backgroundColor;
+  left: $left;
+  width: $width;
+  top: 571px;
+  height: 58px;
+  border-radius: 5px 5px 0px 0px;
+  opacity: 1;
+}
+
+@mixin search-departure-styles($font, $color) {
+  font-size: $font;
+  text-align: left;
+  color: $color
+}
+
+.search-container .col {
+  text-align-last: center;
+  padding-top: 10px;
+}
