@@ -25,11 +25,12 @@ body {
 }
 
 .tab-search-box:first-child .nav-link {
-    @include tab-text-styles(#00043D, $tab-font-size)
+    @include tab-text-styles(#00043D, $size-18)
 }
 
 .tab-search-box:last-child .nav-link {
-    @include tab-text-styles(#6E6E6E, $tab-font-size);
+    @include tab-text-styles(#6E6E6E, $size-18);
+    text-align: center;
 }
 
 .tab-icons {
@@ -65,7 +66,7 @@ body {
 }
 
 .search-departure-info {
-    @include search-departure-styles(14px, #BDBDBD)
+    @include search-departure-styles($size-14, #BDBDBD)
 }
 
 .search-departure-title {
@@ -78,7 +79,7 @@ body {
 }
 
 .search-departure {
-    @include search-departure-styles(14px, #8F8F8F)
+    @include search-departure-styles($size-14, #8F8F8F)
 }
 
 .change-flight-text {
@@ -89,14 +90,7 @@ body {
 }
 
 .search-btn {
-    width: 120px;
-    height: 77px;
-    background: #FFA200 0% 0% no-repeat padding-box;
-    border-radius: 5px;
-    color: var(--white);
-    text-align: left;
-    font-size: 18px;
-    color: #FFFFFF;
+    @include custom-style-btn(120px, 77px, #FFA200 0% 0% no-repeat padding-box, none, 5px, 1, center, font-size, $size-18, color, #FFFFFF);
 }
 
 .dropdown-filter {
@@ -152,15 +146,8 @@ body {
 }
 
 .add-travel-btn {
-    width: 170px;
-    height: 47px;
-    background: #00043D 0% 0% no-repeat padding-box;
-    border-radius: 5px;
-    color: var(--white);
-    text-align: center;
+    @include custom-style-btn(170px, 47px, #00043D 0% 0% no-repeat padding-box, none, 5px, 1, center, font-size, $size-16, color, #FFFFFF);
     float: right;
-    font-size: 16px;
-    color: #FFFFFF;
 }
 
 .request-card-wrapper {
@@ -228,14 +215,7 @@ body {
 }
 
 .offer-btn {
-    width: 43px;
-    height: 43px;
-    background: #00043D 0% 0% no-repeat padding-box;
-    border: 1px solid #00043D;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 12px;
-    color: #FFFFFF;
+    @include custom-style-btn(43px, 43px, #00043D 0% 0% no-repeat padding-box, 1px solid #00043D, 5px, 1, center, font-size, $size-12, color, #FFFFFF);
     padding: 0;
 }
 
@@ -354,12 +334,13 @@ body {
 }
 
 .close-card-btn {
+    padding: 2px 7px;
+    color: #FFFFFF;
     width: 28px;
     height: 24px;
     background: #00043D 0% 0% no-repeat padding-box;
     border-radius: 5px 5px 0px 0px;
-    padding: 2px 7px;
-    color: #fff;
+    text-align-last: center;
 }
 
 .image-card-wrapper {

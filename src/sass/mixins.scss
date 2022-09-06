@@ -14,7 +14,7 @@
   background-color: $backgroundColor;
   left: $left;
   width: $width;
-  height:  $height;
+  height: $height;
   top: 571px;
   border-radius: 5px 5px 0px 0px;
   opacity: 1;
@@ -24,6 +24,24 @@
   font-size: $font;
   text-align: left;
   color: $color
+}
+
+@mixin custom-style-btn($width, $height, $background, $border, $border-radius, $opacity, $text-align, $property1: null, $value1: null, $property2: null, $value2: null) {
+  width: $width;
+  height: $height;
+  background: $background;
+  border: $border;
+  border-radius: $border-radius;
+  opacity: $opacity;
+  text-align: $text-align;
+
+  @if $property1  !=null {
+    #{$property1}: $value1
+  }
+
+  @if $property2  !=null {
+    #{$property2}: $value2
+  }
 }
 
 .search-container .col {
