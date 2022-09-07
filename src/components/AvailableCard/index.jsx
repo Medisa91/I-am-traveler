@@ -82,7 +82,7 @@ const AvailableCard = () => {
             </div>
           </div>
           <div className="col-5" style={{ textAlign: "right" }}>
-            <button type="button" class="btn btn-lg offer-btn">
+            <button type="button" className="btn btn-lg offer-btn">
               Offer $120
             </button>
           </div>
@@ -91,12 +91,12 @@ const AvailableCard = () => {
       <div className="card-footer bg-transparent request-card-border request-card-footer">
         <button
           type="button"
-          class="btn btn-lg more-detail-btn"
+          className="btn btn-lg more-detail-btn"
           onClick={() => setShowMoreDetail(!showMoreDetail)}
         >
           More Details
         </button>
-        <button type="button" class="btn btn-lg make-offer-btn">
+        <button type="button" className="btn btn-lg make-offer-btn">
           Accept / Make Offer
         </button>
       </div>
@@ -127,25 +127,25 @@ const AvailableCard = () => {
               </div>
               {showDropdown && (
                 <div className="dropdown-card-info">
-                  <a class="dropdown-item my-1" href="/">
+                  <a className="dropdown-item my-1" href="/">
                     <FontAwesomeIcon icon={faCheck} /> Profile Picture
                   </a>
-                  <a class="dropdown-item my-1" href="/">
+                  <a className="dropdown-item my-1" href="/">
                     <FontAwesomeIcon icon={faCheck} /> Valid Passport
                   </a>
-                  <a class="dropdown-item my-1" href="/">
+                  <a className="dropdown-item my-1" href="/">
                     <FontAwesomeIcon icon={faCheck} />
                     ID Validation (Passport)
                   </a>
-                  <a class="dropdown-item my-1" href="/">
+                  <a className="dropdown-item my-1" href="/">
                     <FontAwesomeIcon icon={faCheck} />
                     Proof of address
                   </a>
-                  <a class="dropdown-item my-1" href="/">
+                  <a className="dropdown-item my-1" href="/">
                     <FontAwesomeIcon icon={faCheck} />
                     Successful Transaction (10+)
                   </a>
-                  <a class="dropdown-item my-1" href="/">
+                  <a className="dropdown-item my-1" href="/">
                     <FontAwesomeIcon icon={faCheck} />
                     Rating ( 4.5/5 )
                   </a>

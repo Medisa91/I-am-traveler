@@ -43,7 +43,7 @@ const FilterBox = () => {
             Delivery Type
             <FontAwesomeIcon className="chevron-icon" icon={faChevronDown} />
           </button>
-          <button type="button" class="btn add-travel-btn">
+          <button type="button" className="btn add-travel-btn">
             Add my travel
           </button>
         </div>

@@ -11,7 +11,7 @@ const AvailableRequest = () => {
         <a className="filter-responsive-btn" href="/">
           <FontAwesomeIcon icon={faFilter} />
         </a>
-        <button type="button" class="btn add-travel-btn-responsive">
+        <button type="button" className="btn add-travel-btn-responsive">
           Add my travel
         </button>
       </div>

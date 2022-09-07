@@ -107,13 +107,13 @@ const SearchBox = () => {
             </div>
           </div>
           <div className="col m-auto text-center">
-            <button type="button" class="btn btn-lg search-btn">
+            <button type="button" className="btn btn-lg search-btn">
               Search
             </button>
           </div>
         </div>
       </div>
-      <div class="search-container-responsive">
+      <div className="search-container-responsive">
         <div>
           <span className="search-departure-info">Departure Info</span>
         </div>
@@ -158,10 +158,10 @@ const SearchBox = () => {
           </span>
         </div>
         <div className="mt-4 text-center">
-          <button type="button" class="btn btn-lg change-flight-btn">
+          <button type="button" className="btn btn-lg change-flight-btn">
             Change Flight
           </button>
-          <button type="button" class="btn btn-lg responsive-search-btn">
+          <button type="button" className="btn btn-lg responsive-search-btn">
             Search
           </button>
         </div>
