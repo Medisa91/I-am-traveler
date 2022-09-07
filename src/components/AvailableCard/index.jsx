@@ -17,43 +17,69 @@ const AvailableCard = () => {
       <div className="card-header bg-transparent">
         <div className="row">
           <div className="col-3 text-left header-card-depart-arriv">
-            <p className="text-left">CGK</p>
-            <p className="text-left">15:15</p>
+            <div>
+              <span className="text-left">CGK</span>
+            </div>
+            <div>
+              <span className="text-left">15:15</span>
+            </div>
           </div>
           <div className="col-6 text-center header-card-plane">
-            <p className="fw-bold">Cloths</p>
-            <p className="mb-0">
-              - - - -{" "}
-              <img
-                src={PlaneIcon}
-                className="card-request-icon"
-                alt="location-img"
-              />{" "}
-              - - - -
-            </p>
+            <div>
+              <span className="fw-bold">Cloths</span>
+            </div>
+            <div>
+              <span className="mb-0">
+                - - - -{" "}
+                <img
+                  src={PlaneIcon}
+                  className="card-request-icon"
+                  alt="location-img"
+                />{" "}
+                - - - -
+              </span>
+            </div>
           </div>
-          <div className="col-3 text-right header-card-depart-arriv">
-            <p>DPS</p>
-            <p>17:15</p>
+          <div className="col-3 header-card-depart-arriv">
+            <div className="text-right">
+              <span>DPS</span>
+            </div>
+            <div className="text-right">
+              <span>17:15</span>
+            </div>
           </div>
         </div>
       </div>
       <div className="card-body request-card-border">
         <div className="row">
           <div className="col-7 request-body-info">
-            <p className="card-text">Size: 35*35*36</p>
-            <p className="card-text">Weight: 1.2KG</p>
-            <p className="card-text">Item Value: 250$</p>
+            <div>
+              <span className="card-text">Size: 35*35*36</span>
+            </div>
+            <div>
+              <span className="card-text">Weight: 1.2KG</span>
+            </div>
+            <div>
+              <span className="card-text">Item Value: 250$</span>
+            </div>
           </div>
           <div className="col-5 request-body-package">
-            <p>Package ID</p>
-            <p>TRV2569857</p>
+            <div>
+              <span>Package ID</span>
+            </div>
+            <div>
+              <span>TRV2569857</span>
+            </div>
           </div>
         </div>
         <div className="row mt-2">
           <div className="col-7 request-body-date">
-            <p className="card-text">Shipping Deadline:</p>
-            <p className="card-text">05/05/2022</p>
+            <div>
+              <span className="card-text">Shipping Deadline:</span>
+            </div>
+            <div>
+              <span className="card-text">05/05/2022</span>
+            </div>
           </div>
           <div className="col-5" style={{ textAlign: "right" }}>
             <button type="button" class="btn btn-lg offer-btn">
@@ -86,7 +112,7 @@ const AvailableCard = () => {
 
           <div className="card mb-3 request-card-wrapper">
             <div className="card-header bg-transparent">
-              <p>
+              <div>
                 <span>Owner:</span> Jacob Arlington
                 <a onClick={() => setShowDropdown(!showDropdown)}>
                   <img
@@ -98,7 +124,7 @@ const AvailableCard = () => {
                     alt="profile-img"
                   />
                 </a>
-              </p>
+              </div>
               {showDropdown && (
                 <div className="dropdown-card-info">
                   <a class="dropdown-item my-1" href="/">
@@ -125,20 +151,27 @@ const AvailableCard = () => {
                   </a>
                 </div>
               )}
-              <p>
+              <div>
                 <span>Accepted Delivery Type:</span> Pickup,Post, Drop Off
-              </p>
+              </div>
             </div>
             <div className="card-body request-card-border location-card-info">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Praesent euismod massa augue, non venenatis
               </p>
-              <p className="location-title">Location:</p>
-              <p className="location-description">
-                No2, FCUK Street, Ontario, Canada
-              </p>
-              <p className="location-title">Images: </p>
+              <div className="text-left">
+                <span className="location-title">Location:</span>
+              </div>
+              <div>
+                <p className="location-description">
+                  No2, FCUK Street, Ontario, Canada
+                </p>
+              </div>
+              <div className="text-left mb-1">
+                <span className="location-title">Images: </span>
+              </div>
+
               <div className="row image-card-wrapper">
                 <div className="col-3">
                   <img src={PackageImg01} alt="package-img" />

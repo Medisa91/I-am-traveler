@@ -25,28 +25,40 @@ const SearchBox = () => {
       <div className="search-container">
         <div className="row m-auto">
           <div className="col">
-            <p className="search-departure-info">Departure Info</p>
-            <p className="search-departure-title fw-bold">
-              <img
-                src={LocationIcon}
-                className="tab-icons"
-                alt="location-img"
-              />
-              Yogyakarta
-            </p>
-            <p className="search-departure">N790AN, Indonesia</p>
+            <div className="text-align-last-left">
+              <span className="search-departure-info">Departure Info</span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure-title fw-bold">
+                <img
+                  src={LocationIcon}
+                  className="tab-icons"
+                  alt="location-img"
+                />
+                Yogyakarta
+              </span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure">N790AN, Indonesia</span>
+            </div>
           </div>
           <div className="col">
-            <p className="search-departure-info">Departure Time</p>
-            <p className="search-departure-title fw-bold">
-              <img
-                src={CalendarIcon}
-                className="tab-icons"
-                alt="location-img"
-              />
-              17 July 2021
-            </p>
-            <p className="search-departure">20:15 (+8GMT)</p>
+            <div className="text-align-last-left">
+              <span className="search-departure-info">Departure Time</span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure-title fw-bold">
+                <img
+                  src={CalendarIcon}
+                  className="tab-icons"
+                  alt="location-img"
+                />
+                17 July 2021
+              </span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure">20:15 (+8GMT)</span>
+            </div>
           </div>
           <div className="col m-auto text-center">
             <img
@@ -59,28 +71,40 @@ const SearchBox = () => {
             </a>
           </div>
           <div className="col">
-            <p className="search-departure-info">Arrival Info</p>
-            <p className="search-departure-title fw-bold">
-              <img
-                src={LocationIcon}
-                className="tab-icons"
-                alt="location-img"
-              />
-              Tokyo
-            </p>
-            <p className="search-departure">N790AN, Japan</p>
+            <div className="text-align-last-left">
+              <span className="search-departure-info">Arrival Info</span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure-title fw-bold">
+                <img
+                  src={LocationIcon}
+                  className="tab-icons"
+                  alt="location-img"
+                />
+                Tokyo
+              </span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure">N790AN, Japan</span>
+            </div>
           </div>
           <div className="col">
-            <p className="search-departure-info">Arrival Time</p>
-            <p className="search-departure-title fw-bold">
-              <img
-                src={CalendarIcon}
-                className="tab-icons"
-                alt="location-img"
-              />
-              25 July 2021
-            </p>
-            <p className="search-departure">20:15 (+8GMT)</p>
+            <div className="text-align-last-left">
+              <span className="search-departure-info">Arrival Time</span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure-title fw-bold">
+                <img
+                  src={CalendarIcon}
+                  className="tab-icons"
+                  alt="location-img"
+                />
+                25 July 2021
+              </span>
+            </div>
+            <div className="text-align-last-left">
+              <span className="search-departure">20:15 (+8GMT)</span>
+            </div>
           </div>
           <div className="col m-auto text-center">
             <button type="button" class="btn btn-lg search-btn">
@@ -90,19 +114,25 @@ const SearchBox = () => {
         </div>
       </div>
       <div class="search-container-responsive">
-        <p className="search-departure-info">Departure Info</p>
-        <p className="search-departure-title fw-bold">
-          <img src={LocationIcon} className="tab-icons" alt="location-img" />
-          Yogyakarta
-          <span className="search-departure">N790AN, Indonesia</span>
-        </p>
-        <p className="search-departure-title fw-bold">
-          <img src={CalendarIcon} className="tab-icons" alt="location-img" />
-          17 July 2021
-          <span className="search-departure">20:15 (+8GMT)</span>
-        </p>
+        <div>
+          <span className="search-departure-info">Departure Info</span>
+        </div>
+        <div>
+          <span className="search-departure-title fw-bold">
+            <img src={LocationIcon} className="tab-icons" alt="location-img" />
+            Yogyakarta
+            <span className="search-departure">N790AN, Indonesia</span>
+          </span>
+        </div>
+        <div>
+          <span className="search-departure-title fw-bold">
+            <img src={CalendarIcon} className="tab-icons" alt="location-img" />
+            17 July 2021
+            <span className="search-departure">20:15 (+8GMT)</span>
+          </span>
+        </div>
         <div className="search-plane-wrapper">
-          . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+          . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
           .{" "}
           <img
             src={PlaneIcon}
@@ -110,18 +140,24 @@ const SearchBox = () => {
             alt="location-img"
           />
         </div>
-        <p className="search-departure-info">Arrival Info</p>
-        <p className="search-departure-title fw-bold">
-          <img src={LocationIcon} className="tab-icons" alt="location-img" />
-          Tokyo
-          <span className="search-departure">N790AN, Japan</span>
-        </p>
-        <p className="search-departure-title fw-bold">
-          <img src={CalendarIcon} className="tab-icons" alt="location-img" />
-          25 July 2021
-          <span className="search-departure">20:15 (+8GMT)</span>
-        </p>
-        <div className="mt-4">
+        <div>
+          <span className="search-departure-info">Arrival Info</span>
+        </div>
+        <div>
+          <span className="search-departure-title fw-bold">
+            <img src={LocationIcon} className="tab-icons" alt="location-img" />
+            Tokyo
+            <span className="search-departure">N790AN, Japan</span>
+          </span>
+        </div>
+        <div>
+          <span className="search-departure-title fw-bold">
+            <img src={CalendarIcon} className="tab-icons" alt="location-img" />
+            25 July 2021
+            <span className="search-departure">20:15 (+8GMT)</span>
+          </span>
+        </div>
+        <div className="mt-4 text-center">
           <button type="button" class="btn btn-lg change-flight-btn">
             Change Flight
           </button>

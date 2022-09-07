@@ -15,7 +15,7 @@ const AvailableRequest = () => {
           Add my travel
         </button>
       </div>
-      <div className="row m-auto">
+      <div className="row m-auto card-container">
         <div className="col-lg-3 col-md-6 col-sm-12 pl-0 padding-cards">
           <AvailableCard />
         </div>
