@@ -3,7 +3,7 @@ import FlightIcon from "../../assets/images/svg/flight.svg";
 import HotelIcon from "../../assets/images/svg/hotel.svg";
 import LocationIcon from "../../assets/images/svg/location.svg";
 import CalendarIcon from "../../assets/images/svg/calendar.svg";
-import PlaneIcon from "../../assets/images/plane.png";
+import PlaneIcon from "../../assets/images/svg/plane.svg";
 
 const SearchBox = () => {
   return (

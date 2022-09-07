@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PlaneIcon from "../../assets/images/plane.png";
-import CertificateYellowIcon from "../../assets/images/verified-yellow.png";
-import CertificateGreenIcon from "../../assets/images/verified-green.png";
+import CertificateYellowIcon from "../../assets/images/svg/verified-yellow.svg";
+import CertificateGreenIcon from "../../assets/images/svg/verified-green.svg";
 import PackageImg01 from "../../assets/images/package01.png";
 import PackageImg02 from "../../assets/images/package02.png";
 import PackageImg03 from "../../assets/images/package03.png";
